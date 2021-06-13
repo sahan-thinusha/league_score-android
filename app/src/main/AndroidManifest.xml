@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LeagueScore">
-        <activity android:name=".ui.user.SignUpActivity"></activity>
-        <activity android:name=".ui.user.LoginActivity">
+        <activity android:name=".ui.dashboard.DashboardActivity"></activity>
+        <activity android:name=".ui.user.SignUpActivity" />
+        <activity android:name=".ui.user.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

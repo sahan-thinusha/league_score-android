@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">League Score</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_Email">Email</string>
+    <string name="txt_Password">Password</string>
+    <string name="txt_SignUp">Sign up</string>
+    <string name="txt_or">or</string>
+    <string name="txt_copyright">Copyright @League Score 2021</string>
+    <string name="txt_Name">Name</string>
+    <string name="txt_CnfPassword">Confirm Password</string>
+    <string name="txt_ContactNo">Contact No</string>
 </resources>
