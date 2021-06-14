@@ -9,4 +9,5 @@
     <string name="txt_Name">Name</string>
     <string name="txt_CnfPassword">Confirm Password</string>
     <string name="txt_ContactNo">Contact No</string>
+    <string name="txt_riotid">Riot Id</string>
 </resources>
