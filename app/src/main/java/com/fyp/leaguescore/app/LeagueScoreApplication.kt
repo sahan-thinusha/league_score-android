@@ -9,9 +9,6 @@ import es.dmoral.toasty.Toasty
 
 class LeagueScoreApplication : Application() {
 
-
-
-
     protected fun initDagger(application: LeagueScoreApplication): AppComponent {
         return DaggerAppComponent.builder()
             .appModule(AppModule(application))

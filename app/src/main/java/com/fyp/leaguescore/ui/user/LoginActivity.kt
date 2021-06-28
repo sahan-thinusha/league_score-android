@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Base64
+import android.util.Log
 import android.util.Patterns.EMAIL_ADDRESS
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -110,7 +111,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun login(email: String, password: String) {
-        val credentials = "animalhub:animalhub@123"
+        val credentials = "league_score:league_score@123"
         val basic = "Basic " + Base64.encodeToString(
             credentials.toByteArray(),
             Base64.NO_WRAP
@@ -121,6 +122,9 @@ class LoginActivity : AppCompatActivity() {
             override fun onResponse(call: Call<User>, response: Response<User>) {
                 if (response.code() == 200) {
                     val token: String? = response.body()?.token
+                    if (token != null) {
+                        Log.e("t",token)
+                    }
                     SharedPreferencesHandler().saveIntoSharedPreferences(applicationContext, token)
                     val intent = Intent(this@LoginActivity, DashboardActivity::class.java)
                     startActivity(intent)//start new activity

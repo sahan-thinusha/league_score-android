@@ -1,12 +1,8 @@
 package com.fyp.leaguescore.network
 
-import com.fyp.leaguescore.model.Gamer
-import com.fyp.leaguescore.model.LoginRequest
-import com.fyp.leaguescore.model.User
+import com.fyp.leaguescore.model.*
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.Header
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface APIInterface {
     @POST("api/login")
@@ -14,5 +10,12 @@ interface APIInterface {
 
     @POST("api/gamer")
     fun registerGamer(@Header("Authorization") authorization: String, @Body gamer: Gamer): Call<Gamer>
+
+    @GET("api/predict")
+    fun prediction(@Header("Authorization") authorization: String,@Query("ch1") ch1 : String,@Query("ch2")ch2 : String,@Query("ch3")ch3: String,@Query("ch4")ch4: String): Call<ArrayList<Team>>
+
+    @GET("api/champion")
+    fun getChampions(@Header("Authorization") authorization: String): Call<ArrayList<Champion>>
+
 
 }

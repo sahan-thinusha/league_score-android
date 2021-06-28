@@ -46,7 +46,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun signup(email: String, password: String, name: String, riotId: String) {
-        val credentials = "leaguescore:leaguescore@123"
+        val credentials = "league_score:league_score@123"
         val basic = "Basic " + Base64.encodeToString(
             credentials.toByteArray(),
             Base64.NO_WRAP

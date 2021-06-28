@@ -6,4 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardActivity">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTeamBuild"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Create Team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnViewStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Satatus"
+        app:layout_constraintEnd_toEndOf="@+id/btnTeamBuild"
+        app:layout_constraintStart_toStartOf="@+id/btnTeamBuild"
+        app:layout_constraintTop_toBottomOf="@+id/btnTeamBuild" />
+
+    <Button
+        android:id="@+id/btnMatchHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Match History"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewStatus"
+        app:layout_constraintStart_toStartOf="@+id/btnViewStatus"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewStatus" />
+
+    <Button
+        android:id="@+id/btnProMatches"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pro Matches"
+        app:layout_constraintEnd_toEndOf="@+id/btnMatchHistory"
+        app:layout_constraintStart_toStartOf="@+id/btnMatchHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnMatchHistory" />
 </androidx.constraintlayout.widget.ConstraintLayout>
