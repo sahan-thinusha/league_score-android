@@ -34,7 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="My Satatus"
+        android:text="My Status"
         app:layout_constraintEnd_toEndOf="@+id/btnTeamBuild"
         app:layout_constraintStart_toStartOf="@+id/btnTeamBuild"
         app:layout_constraintTop_toBottomOf="@+id/btnTeamBuild" />

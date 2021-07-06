@@ -17,5 +17,10 @@ interface APIInterface {
     @GET("api/champion")
     fun getChampions(@Header("Authorization") authorization: String): Call<ArrayList<Champion>>
 
+    @GET("api/video")
+    fun getVideos(@Header("Authorization") authorization: String): Call<ArrayList<Video>>
+
+    @GET("api/match")
+    fun getMatches(@Header("Authorization") authorization: String): Call<ArrayList<Match>>
 
 }

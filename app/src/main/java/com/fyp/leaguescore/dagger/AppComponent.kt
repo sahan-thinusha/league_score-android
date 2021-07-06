@@ -1,11 +1,13 @@
 package com.fyp.leaguescore.dagger
 
 
+import com.fyp.leaguescore.ui.match.MatchHistoryActivity
 import com.fyp.leaguescore.ui.prediction.ChampionListActivity
 import com.fyp.leaguescore.ui.prediction.ChampionSelectActivity
 import com.fyp.leaguescore.ui.prediction.TeamPrediction
 import com.fyp.leaguescore.ui.user.LoginActivity
 import com.fyp.leaguescore.ui.user.SignUpActivity
+import com.fyp.leaguescore.ui.video.ProMatchListActivity
 import com.fyp.leaguescore.util.PresenterModule
 import com.fyp.leaguescore.util.SharedPreferencesHandler
 import dagger.Component
@@ -20,6 +22,8 @@ interface AppComponent {
     fun inject(target: SignUpActivity)
     fun inject(target: ChampionSelectActivity)
     fun inject(target: ChampionListActivity)
+    fun inject(target: ProMatchListActivity)
+    fun inject(target: MatchHistoryActivity)
 
 }
 
